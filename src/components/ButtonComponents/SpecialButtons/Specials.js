@@ -9,7 +9,7 @@ export default function Specials() {
 	// STEP 2 - add the imported data to state
 	const [specialState] = useState(specials);
 	return (
-		<div>
+		<div className="special-buttons-container">
 			{specialState.map((specials, index) => (
 				<SpecialButton key={index} specials={specials} />
 			))}
